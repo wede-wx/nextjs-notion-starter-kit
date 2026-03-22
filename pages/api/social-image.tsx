@@ -1,1 +1,3 @@
-export default () => new Response("Disabled");
+export default function handler(req, res) {
+  res.status(200).json({ message: 'Disabled' })
+}
